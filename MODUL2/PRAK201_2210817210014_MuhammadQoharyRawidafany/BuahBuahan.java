@@ -17,7 +17,7 @@ public class BuahBuahan {
         this.hargaBuah = hargaBuah;
         this.jumlahBeli = jumlahBeli;
         hargaSebelumDiskon = (jumlahBeli / beratBuah) * hargaBuah;
-        totalDiskon = (floor(jumlahBeli/4))*(hargaSebelumDiskon * diskon);
+        totalDiskon = (floor(jumlahBeli/4))*(hargaBuah * diskon * 4);
         hargaSetelahDiskon = hargaSebelumDiskon - totalDiskon;
     }
     void display () {
