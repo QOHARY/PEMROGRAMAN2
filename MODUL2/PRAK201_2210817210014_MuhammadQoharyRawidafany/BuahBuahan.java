@@ -21,12 +21,12 @@ public class BuahBuahan {
         hargaSetelahDiskon = hargaSebelumDiskon - totalDiskon;
     }
     void display () {
-        System.out.println("Nama Buah: " + namaBuah);
+        System.out.printf("Nama Buah: %s%n" , namaBuah);
         System.out.println("Berat : " + beratBuah);
-        System.out.println("Harga : " + hargaBuah);
-        System.out.println("Jumlah : " + jumlahBeli);
-        System.out.println("Harga Sebelum Diskon : " + hargaSebelumDiskon);
-        System.out.println("Total Diskon : " + totalDiskon);
-        System.out.println("Harga Setelah Diskon : " + hargaSetelahDiskon + "\n");
+        System.out.printf("Harga : %.1f%n" , hargaBuah);
+        System.out.printf("Jumlah : %.1fkg %n" , jumlahBeli);
+        System.out.printf("Harga Sebelum Diskon : Rp%.2f%n" , hargaSebelumDiskon);
+        System.out.printf("Total Diskon : Rp%.2f%n" , totalDiskon);
+        System.out.printf("Harga Setelah Diskon : Rp%.2f%n%n" , hargaSetelahDiskon);
     }
 }
